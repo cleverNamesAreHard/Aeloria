@@ -33,6 +33,6 @@ This is meant to be a playable version of a homebrew campaign setting, so others
 
 ## Current Status
 
-Right now, the project includes a working prototype with basic movement, turn order, and team setup. The goal is to continue expanding it gradually — first by adding stats, then attacks, and eventually a full story progression system.
+Just stats right now basically.  I'll build out the game once I'm confident it'll go relatively smoothly
 
-This is a work in progress.
+This is a work in progress in the most literal sense of the phrase.
