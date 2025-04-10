@@ -4,16 +4,12 @@ This is a personal project to convert a custom Dungeons & Dragons campaign into 
 
 ![Aeloria Chronicles Banner](https://i.imgur.com/cPiu7S1.png)
 
----
-
 ## Project Goals
 
 - Build a turn-based tactical RPG similar to Final Fantasy Tactics
 - Use a grid-based movement and combat system
 - Allow players to control a party of characters through missions tied to a larger narrative
 - Capture the tone and structure of a tabletop D&D campaign in a playable game format
-
----
 
 ## What the Game Will Include
 
@@ -23,13 +19,9 @@ This is a personal project to convert a custom Dungeons & Dragons campaign into 
 - Character stats, leveling, and abilities (based on D&D mechanics)
 - Encounters adapted directly from sessions in the original campaign
 
----
-
 ## Why This Exists
 
 This is meant to be a playable version of a homebrew campaign setting, so others can experience it without needing to be at the table. It also makes it easier to revisit the story or try out different decisions without relying on memory or group availability.
-
----
 
 ## Current Status
 
