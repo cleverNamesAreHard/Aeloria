@@ -1,0 +1,47 @@
+{
+    "name": "Liora Virelle",
+    "job": "Paladin",
+    "hp": 15,
+    "atk": 8,
+    "mag": 15,
+    "defs": 12,
+    "mdef": 12,
+    "starting_equipment": [
+        {
+            "item_id": 1,
+            "slot": "solo_weapon",
+            "name": "Staff of Silver Moonlight",
+            "atk": 2,
+            "mag": 8,
+            "defs": 0,
+            "mdefs": 0
+        },
+        {
+            "item_id": 2,
+            "slot": "chest",
+            "name": "Plate Armor of Selune",
+            "atk": 0,
+            "mag": 1,
+            "defs": 5,
+            "mdefs": 8
+        },
+        {
+            "item_id": 3,
+            "slot": "amulet",
+            "name": "Holy Amulet",
+            "atk": 0,
+            "mag": 1,
+            "defs": 0,
+            "mdefs": 0
+        },
+        {
+            "item_id": 4,
+            "slot": "helmet",
+            "name": "Silver Circlet",
+            "atk": 0,
+            "mag": 1,
+            "defs": 1,
+            "mdefs": 1
+        }
+    ]
+}
