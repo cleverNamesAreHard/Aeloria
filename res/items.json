@@ -1,0 +1,41 @@
+{
+    "1": {
+        "item_id": 1,
+        "slot": "weapon",
+        "name": "Staff of Silver Moonlight",
+        "atk_roll": "1d6+1",
+        "attack_bonus": 0,
+        "ac_bonus": 0,
+        "init_bonus": 0,
+        "spell_attack_bonus": "",
+        "spell_save": 0,
+        "stat_bonuses": {"hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 0, "wis": 0},
+        "description": "Insert Description here"
+    },
+    "2": {
+        "item_id": 2,
+        "slot": "chest",
+        "name": "Silver Plate Armor of Selune",
+        "atk_roll": "",
+        "attack_bonus": 0,
+        "ac_bonus": 3,
+        "init_bonus": 1,
+        "spell_attack_bonus": "",
+        "spell_save": 0,
+        "stat_bonuses": {"hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 0, "wis": 0},
+        "description": "Insert Description here"
+    },
+    "3": {
+        "item_id": 3,
+        "slot": "amulet",
+        "name": "Moonlight Amulet of Selune",
+        "atk_roll": "",
+        "attack_bonus": 0,
+        "ac_bonus": 0,
+        "init_bonus": 0,
+        "spell_attack_bonus": "",
+        "spell_save": 0,
+        "stat_bonuses": {"hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 0, "wis": 1},
+        "description": "Insert Description here"
+    }
+}

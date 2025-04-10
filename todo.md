@@ -1,0 +1,3 @@
+# Refactoring:
+* Gotta update the Character class.  We were building something more akin to tactics in terms of stats.  We gotta make it more like D&D 5e so it fits with easy translation from the campaign
+* Add a db.  The character files in the characters/ folder is meant to be for starter characters at a New Game.  The database will handle things for managing the game itself as the character progresses (level ups, new magic, etc)

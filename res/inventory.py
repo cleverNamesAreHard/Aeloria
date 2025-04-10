@@ -18,3 +18,6 @@ class Inventory:
 
     def get_total_unique_items(self):
         return len(self.items)
+
+    def __iter__(self):
+        return iter(self.items)
