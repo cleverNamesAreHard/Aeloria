@@ -17,8 +17,20 @@ class Equipment:
         self.helmet = helmet
         self.chest = chest
         self.arms = arms
-        self.legs = legs 
+        self.legs = legs
         self.amulet = amulet
         self.ring1 = ring1
         self.ring2 = ring2
         self.weapon = weapon
+
+    def __iter__(self):
+        return iter([
+            self.helmet,
+            self.chest,
+            self.arms,
+            self.legs,
+            self.amulet,
+            self.ring1,
+            self.ring2,
+            self.weapon
+        ])

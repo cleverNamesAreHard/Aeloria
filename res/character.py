@@ -41,8 +41,7 @@ class Character:
     
     def initial_stat_calculations(self):
         for item in self.equipment:
-            self.ac += item.ac_bonus
-            self.initiative += item.init_bonus
+            pass
     
     def attack_roll(self, equipment: Equipment):
         pass
@@ -77,7 +76,7 @@ def from_file(character_name: str) -> Character:
         wis = character_json["wis"]
         intel = character_json["intel"]
         starting_equipment = character_json["starting_equipment"]
-    with open("items.json") as f_in:
+    with open("res/items.json") as f_in:
         items_json = json.load(f_in)
         for item_id in starting_equipment:
             item_json = items_json[str(item_id)]
