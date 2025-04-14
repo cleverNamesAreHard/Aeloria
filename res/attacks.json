@@ -1,0 +1,74 @@
+{
+    "1": {
+        "name": "Shadow Rend",
+        "description": "A devastating strike of pure shadow. Ignores half armor.",
+        "range": 1,
+        "damage": "2d8+3",
+        "type": "dark",
+        "area": "single",
+        "stat": "intel"
+    },
+    "2": {
+        "name": "Void Pulse",
+        "description": "Emits a pulse of void energy that damages nearby enemies.",
+        "range": 3,
+        "damage": "1d6+2",
+        "type": "arcane",
+        "area": "radius",
+        "stat": "wis"
+    },
+    "3": {
+        "name": "Divine Strike",
+        "description": "A radiant melee attack that burns evil flesh.",
+        "range": 1,
+        "damage": "1d10+2",
+        "type": "radiant",
+        "area": "single",
+        "stat": "strength"
+    },
+    "4": {
+        "name": "Protective Flare",
+        "description": "Blinds adjacent enemies and grants temporary AC to allies.",
+        "range": 1,
+        "damage": "0",
+        "type": "light",
+        "area": "burst",
+        "stat": "cha"
+    },
+    "5": {
+        "name": "Arcane Bolt",
+        "description": "Fires a concentrated bolt of pure arcane force.",
+        "range": 4,
+        "damage": "1d6+3",
+        "type": "arcane",
+        "area": "single",
+        "stat": "intel"
+    },
+    "6": {
+        "name": "Time Ripple",
+        "description": "Slows the movement of enemies within a small radius.",
+        "range": 2,
+        "damage": "1d4+1",
+        "type": "arcane",
+        "area": "radius",
+        "stat": "wis"
+    },
+    "7": {
+        "name": "Rusty Swing",
+        "description": "A wild and basic strike with a crude blade.",
+        "range": 1,
+        "damage": "1d4+1",
+        "type": "physical",
+        "area": "single",
+        "stat": "strength"
+    },
+    "8": {
+        "name": "Battle Shout",
+        "description": "A guttural roar that intimidates and lowers AC.",
+        "range": 1,
+        "damage": "0",
+        "type": "debuff",
+        "area": "cone",
+        "stat": "cha"
+    }
+}
