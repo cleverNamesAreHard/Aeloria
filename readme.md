@@ -36,31 +36,31 @@ See [`todo.md`](https://github.com/cleverNamesAreHard/Elarion/blob/master/todo.m
     cd Elarion
     ```
 
-2. Make sure you're using [**Python 3.13.2**](https://www.python.org/downloads/release/python-3132/)
+2. Make sure you have [**Python 3.13.2**](https://www.python.org/downloads/release/python-3132/) installed.  You can install it alongside other versions — just note the install path if needed.
 
 3. Create and activate a virtual environment:  
-   ```bash
-   python -m venv venv
-   ```
 
-   - On Windows:  
-     ```bash
-     .env\Scriptsctivate
-     ```
-   - On macOS/Linux:  
-     ```bash
-     source venv/bin/activate
-     ```
+    - On Windows:
+    ```bash
+    C:\path\to\python313\python.exe -m venv venv
+    venv\Scripts\activate
+    ```
+
+    - On macOS/Linux:
+    ```bash
+    /path/to/python313/python -m venv venv
+    source venv/bin/activate
+    ```
 
 4. Install dependencies:  
-   ```bash
-   pip install -r requirements.txt
-   ```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 5. Run the game:  
-   ```bash
-   python game.py
-   ```
+    ```bash
+    python game.py
+    ```
 
 ## Contributing
 
