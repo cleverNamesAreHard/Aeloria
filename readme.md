@@ -1,35 +1,45 @@
-# Tactical RPG – D&D Campaign Conversion
+# Elarion Tactical RPG
+### A D&D Campaign Conversion Effort
 
-This is a personal project to convert a custom Dungeons & Dragons campaign into a tactical RPG. The goal is to make the world and story more accessible outside of traditional tabletop sessions, and to give players a way to experience the campaign on their own.
+This is a personal project to adapt a custom Dungeons & Dragons campaign into a turn-based tactical RPG. The goal is to make the story and world accessible outside the tabletop setting, giving players a way to experience the campaign solo.
 
-![Aeloria Chronicles Banner](https://i.imgur.com/cPiu7S1.png)
+![Elarion Chronicles Banner](https://i.imgur.com/cPiu7S1.png)
 
 ## Project Goals
 
-- Build a turn-based tactical RPG similar to Final Fantasy Tactics
+- Build a tactical RPG in the style of Final Fantasy Tactics
 - Use a grid-based movement and combat system
-- Allow players to control a party of characters through missions tied to a larger narrative
-- Capture the tone and structure of a tabletop D&D campaign in a playable game format
+- Let players control a party through missions tied to a larger narrative
+- Capture the tone and pacing of a D&D campaign in a playable format
 
-## What the Game Will Include
+## Currently Implemented
 
-- A party system with allies and enemies taking turns
-- Grid-based maps where movement and positioning matter
-- A branching story with scripted missions and narrative progression
-- Character stats, leveling, and abilities (based on D&D mechanics)
-- Encounters adapted directly from sessions in the original campaign
+- Turn-based combat with initiative order and grid movement
+- Character stats (STR/DEX/CON/etc) and equipment that affect gameplay
+- A working UI for move, attack, item, and end turn actions
+- Skills with different categories (attack, magic, support)
+- Enemies with basic AI that take actions based on range and logic
+- A battle log system that logs rolls, effects, and outcomes
+
+## In Progress / Planned Features
+
+- Scene scripting and dialogue system for narrative delivery
+- A save/load system for campaign progress
+- Main menu and game state management
+- Visual map tileset and semi-topdown representation
+- Drag-and-drop tools for building scenes and maps (editor UI)
+- Full campaign conversion from original D&D sessions
 
 ## Setup
 
-To get the game running locally:
+1. Make sure you're using **Python 3.13.2**  
+   [Download it here](https://www.python.org/downloads/release/python-3132/)
 
-1. Make sure you're using **Python 3.13.2**
-   - You can download it from [python.org](https://www.python.org/downloads/release/python-3132/)
-2. Create a virtual environment:
+2. Create and activate a virtual environment:
    ```bash
    python -m venv venv
    ```
-3. Activate the virtual environment:
+
    - On Windows:
      ```bash
      .\venv\Scripts\activate
@@ -38,25 +48,17 @@ To get the game running locally:
      ```bash
      source venv/bin/activate
      ```
-4. Install dependencies:
+
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-Once everything’s installed, run the game with:
+4. Run the game:
+   ```bash
+   python game.py
+   ```
 
-```bash
-python game.py
-```
+## Notes
 
-## Why This Exists
-
-This is meant to be a playable version of a homebrew campaign setting, so others can experience it without needing to be at the table. It also makes it easier to revisit the story or try out different decisions without relying on memory or group availability.
-
-## Current Status
-
-Got some backend stats, some basic gameplay, init, combat UI.  Next is to get "scenes" or "stages" created so I can start the story somewhere, move it along, and create some kind of save state.  Then I can make a main menu, and it's dialogue dialogue dialogue while I work on finding a tileset and way to represent it on a semi-topdown way.  Not sure how I'm gonna do that yet.
-
-This is a work in progress in the most literal sense of the phrase.
-
-Unnecessary change to test something.
+This is an active, evolving project. The current version is focused on core combat systems and early engine foundations. The narrative layer and tooling for campaign building are in development.
