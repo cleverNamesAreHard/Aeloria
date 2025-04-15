@@ -67,3 +67,7 @@ This is a personal project to adapt a custom Dungeons & Dragons campaign into a 
 ## Notes
 
 This is an active, evolving project. The current version is focused on core combat systems and early engine foundations. The narrative layer and tooling for campaign building are in development.
+
+### License
+
+This project is licensed under the MIT License
