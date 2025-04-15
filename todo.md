@@ -13,7 +13,7 @@
 - [ ] Scene-to-scene navigation system
 - [ ] Campaign metadata system (e.g., name, author, description)
 - [ ] Campaign selection screen
-- [ ] Reorganize all game data into campaigns/<name>/
+- [ ] Reorganize all game data into campaigns/%campaign_name%/
 - [ ] Scene engine (dialogue scenes, transitions)
 - [ ] Add title page and chapter splash support
 
