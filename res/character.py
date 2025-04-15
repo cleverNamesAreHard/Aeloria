@@ -3,6 +3,7 @@ from .equipment import Equipment
 from .inventory import Inventory
 from .item import Item
 import json
+import os
 import random
 import re
 
@@ -60,15 +61,18 @@ class Character:
             print(f"{self.name} has no weapon attack roll.")
             return 0
 
-def load_character_by_name(character_name: str):
-    with open("characters/characters.json") as f:
+
+def load_character_by_name(character_name: str, campaign_name: str):
+    path = os.path.join("campaigns", campaign_name, "characters.json")
+    with open(path) as f:
         characters = json.load(f)
     match = next((char for char in characters if char.get("name") == character_name), None)
     if not match:
         raise ValueError(f"Character with name '{character_name}' not found.")
-    return _create_character_from_dict(match)
+    return _create_character_from_dict(match, campaign_name)
 
-def _create_character_from_dict(character_data: dict):
+
+def _create_character_from_dict(character_data: dict, campaign_name: str):
     name = character_data["name"]
     job = character_data["job"]
     lvl = character_data["lvl"]
@@ -87,7 +91,8 @@ def _create_character_from_dict(character_data: dict):
     initiative = 0
     inventory = Inventory([])
 
-    with open("res/items.json") as f_in:
+    items_path = os.path.join("campaigns", campaign_name, "items.json")
+    with open(items_path) as f_in:
         items_json = json.load(f_in)
         for item_id in starting_equipment:
             item_json = items_json[str(item_id)]
@@ -177,8 +182,10 @@ def _create_character_from_dict(character_data: dict):
     new_character.initial_stat_calculations()
     return new_character
 
+
 def roll_die(num_rolls, die_size):
     return [random.randint(1, die_size) for _ in range(num_rolls)]
+
 
 def evaluate_expression(expression):
     expression = re.sub(r"\s+", "", expression)  # Strip all spaces
@@ -197,7 +204,7 @@ def evaluate_expression(expression):
             die_size = int(die_size)
             rolls = roll_die(num_rolls, die_size)
             result = sum(rolls)
-            breakdown.append(f"{operator} ({" + ".join(map(str, rolls))})")
+            breakdown.append(f"{operator} ({' + '.join(map(str, rolls))})")
         else:
             result = int(token)
             breakdown.append(f"{operator} {result}")

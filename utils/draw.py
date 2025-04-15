@@ -1,6 +1,7 @@
 import pygame
 import math
 import sys
+import os
 
 
 WHITE = (255, 255, 255)
@@ -173,8 +174,7 @@ def draw_main_menu(screen, font, screen_width, screen_height, title="Tactical RP
     menu_items = ["New Game", "Load Game", "Options", "Quit"]
     buttons = []
 
-    # Dynamically adjust sizes based on screen height
-    title_font_size = max(32, int(screen_height * 0.06))  # scales with window size
+    title_font_size = max(32, int(screen_height * 0.06))
     button_width = int(screen_width * 0.5)
     button_height = max(40, int(screen_height * 0.06))
     spacing = max(10, int(screen_height * 0.02))
@@ -224,4 +224,43 @@ def run_main_menu(screen, font, screen_width, screen_height):
                         elif label == "Quit":
                             pygame.quit()
                             sys.exit()
-                        # Load/Options do nothing
+
+# 🆕 CAMPAIGN SELECT SCREEN
+def run_campaign_select(screen, font, screen_width, screen_height):
+    campaigns = [d for d in os.listdir("campaigns") if os.path.isdir(os.path.join("campaigns", d))]
+    spacing = 20
+    button_height = 60
+    total_height = len(campaigns) * (button_height + spacing)
+    start_y = (screen_height - total_height) // 2
+    buttons = []
+
+    for i, campaign in enumerate(campaigns):
+        rect = pygame.Rect(
+            screen_width // 4,
+            start_y + i * (button_height + spacing),
+            screen_width // 2,
+            button_height
+        )
+        buttons.append((rect, campaign))
+
+    while True:
+        screen.fill(WHITE)
+        title = font.render("Choose a Campaign", True, BLACK)
+        screen.blit(title, (screen_width // 2 - title.get_width() // 2, 50))
+
+        for rect, label in buttons:
+            pygame.draw.rect(screen, GRAY, rect)
+            text = font.render(label, True, BLACK)
+            screen.blit(text, (rect.x + 10, rect.y + 15))
+
+        pygame.display.flip()
+
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+            elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
+                mx, my = pygame.mouse.get_pos()
+                for rect, label in buttons:
+                    if rect.collidepoint(mx, my):
+                        return label

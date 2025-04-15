@@ -1,3 +1,4 @@
+import os
 import pygame
 import sys
 import json
@@ -16,9 +17,9 @@ from utils.draw import (
     draw_units,
     highlight_movement_tiles,
     draw_choose_player_character,
-    run_main_menu
+    run_main_menu,
+    run_campaign_select
 )
-
 from utils.game_engine import (
     move_character,
     get_character_at,
@@ -57,9 +58,7 @@ pygame.display.set_caption("Tactical RPG")
 clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, int(24 * SCALE))
 log_font = pygame.font.SysFont(None, int(16 * SCALE))
-
-with open("res/skills.json") as f:
-    attacks_data = json.load(f)
+selected_campaign = None
 
 mode = "idle"
 selected_attack = None
@@ -70,8 +69,9 @@ def add_to_log(text):
     if len(battle_log) > 5:
         battle_log.pop(0)
 
-def load_starter_characters():
-    with open("characters/characters.json") as f:
+def load_starter_characters(campaign_name):
+    path = os.path.join("campaigns", campaign_name, "characters.json")
+    with open(path) as f:
         characters = json.load(f)
     return [c for c in characters if c.get("is_starter")]
 
@@ -118,12 +118,12 @@ def generate_skill_buttons(attacker, skills_data):
     print(f"[SKILL BUTTONS] Loaded: {list(skill_buttons.keys())}")
     return skill_buttons
 
-def initialize_characters():
-    starter_characters = load_starter_characters()
+def initialize_characters(campaign_name):
+    starter_characters = load_starter_characters(campaign_name)
     party = []
 
     for idx, data in enumerate(starter_characters):
-        ch = load_character_by_name(data["name"])
+        ch = load_character_by_name(data["name"], campaign_name)
         ch.team = "player"
         ch.x = 2 + idx
         ch.y = 2
@@ -141,16 +141,16 @@ def initialize_characters():
         BLACK
     )
 
-    player_character = load_character_by_name(chosen_name)
+    player_character = load_character_by_name(chosen_name, campaign_name)
 
-    enemy = load_character_by_name("Vaelith the Hollow")
+    enemy = load_character_by_name("Vaelith the Hollow", campaign_name)
     enemy.team = "enemy"
     enemy.role = "enemy_hero"
     enemy.x = 8
     enemy.y = 8
     enemy.has_moved = False
 
-    goblin = load_character_by_name("Goblin Grunt")
+    goblin = load_character_by_name("Goblin Grunt", campaign_name)
     goblin.team = "enemy"
     goblin.role = "enemy"
     goblin.x = 9
@@ -167,6 +167,9 @@ def move_enemy_wrapper(character, x, y):
 def get_character_wrapper(x, y):
     return get_character_at(all_units, x, y)
 
+def campaign_file(campaign, filename):
+    return os.path.join("campaigns", campaign, filename)
+
 # Main Menu
 selection = run_main_menu(screen, font, SCREEN_WIDTH, SCREEN_HEIGHT)
 
@@ -182,9 +185,22 @@ skill_buttons = {}
 last_mode = None
 game_over = False
 victory = False
+attacks_data = {}
+selected_campaign = None
 
 if selection == "new_game":
-    all_units, turn_order, party, player_character = initialize_characters()
+    selected_campaign = run_campaign_select(screen, font, SCREEN_WIDTH, SCREEN_HEIGHT)
+
+    skills_path = campaign_file(selected_campaign, "skills.json")
+    try:
+        with open(skills_path) as f:
+            attacks_data = json.load(f)
+    except FileNotFoundError:
+        print(f"[ERROR] Could not load skills.json for campaign '{selected_campaign}' at {skills_path}")
+        pygame.quit()
+        sys.exit()
+
+    all_units, turn_order, party, player_character = initialize_characters(selected_campaign)
     turn_index = 0
     selected_character = turn_order[turn_index]
     selected_character.has_moved = False
