@@ -10,14 +10,9 @@
         "spell_attack_bonus": "",
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0,
-            "str": 0,
-            "dex": 0,
-            "con": 0,
-            "cha": 0,
-            "intel": 0,
-            "wis": 0
+            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 0, "wis": 0
         },
+        "range": 1,
         "description": "Insert Description here"
     },
     "2": {
@@ -31,13 +26,7 @@
         "spell_attack_bonus": "",
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0,
-            "str": 0,
-            "dex": 0,
-            "con": 0,
-            "cha": 0,
-            "intel": 0,
-            "wis": 0
+            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 0, "wis": 0
         },
         "description": "Insert Description here"
     },
@@ -52,13 +41,7 @@
         "spell_attack_bonus": "",
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0,
-            "str": 0,
-            "dex": 0,
-            "con": 0,
-            "cha": 0,
-            "intel": 0,
-            "wis": 1
+            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 0, "wis": 1
         },
         "description": "Insert Description here"
     },
@@ -73,14 +56,9 @@
         "spell_attack_bonus": 1,
         "spell_save": 1,
         "stat_bonuses": {
-            "hp": 0,
-            "str": 0,
-            "dex": 0,
-            "con": 0,
-            "cha": 0,
-            "intel": 1,
-            "wis": 0
+            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 1, "wis": 0
         },
+        "range": 3,
         "description": "A wand imbued with a flicker of fire magic, enhancing magical potency."
     },
     "5": {
@@ -94,13 +72,7 @@
         "spell_attack_bonus": 0,
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0,
-            "str": 0,
-            "dex": 0,
-            "con": 0,
-            "cha": 0,
-            "intel": 1,
-            "wis": 1
+            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 1, "wis": 1
         },
         "description": "Robes worn by novice casters. Offers minor protection and enhances focus."
     },
@@ -115,13 +87,7 @@
         "spell_attack_bonus": 0,
         "spell_save": 1,
         "stat_bonuses": {
-            "hp": 0,
-            "str": 0,
-            "dex": 0,
-            "con": 0,
-            "cha": 1,
-            "intel": 0,
-            "wis": 0
+            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 1, "intel": 0, "wis": 0
         },
         "description": "An amulet etched with arcane runes. Said to sharpen memory and wit in battle."
     },
@@ -136,14 +102,9 @@
         "spell_attack_bonus": 2,
         "spell_save": 1,
         "stat_bonuses": {
-            "hp": 0,
-            "str": 0,
-            "dex": 0,
-            "con": 0,
-            "cha": 1,
-            "intel": 1,
-            "wis": 0
+            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 1, "intel": 1, "wis": 0
         },
+        "range": 4,
         "description": "An unsettling wand infused with the Void. Resonates with despair."
     },
     "8": {
@@ -157,13 +118,7 @@
         "spell_attack_bonus": 0,
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0,
-            "str": 0,
-            "dex": 0,
-            "con": 1,
-            "cha": 1,
-            "intel": 0,
-            "wis": 1
+            "hp": 0, "str": 0, "dex": 0, "con": 1, "cha": 1, "intel": 0, "wis": 1
         },
         "description": "Dark robes of a lost disciple. They shimmer with unseen patterns."
     },
@@ -178,13 +133,7 @@
         "spell_attack_bonus": 0,
         "spell_save": 1,
         "stat_bonuses": {
-            "hp": 0,
-            "str": 0,
-            "dex": 0,
-            "con": 0,
-            "cha": 0,
-            "intel": 1,
-            "wis": 1
+            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 1, "wis": 1
         },
         "description": "This eerie pendant whispers secrets from another world."
     },
@@ -199,14 +148,9 @@
         "spell_attack_bonus": 0,
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0,
-            "str": 1,
-            "dex": 0,
-            "con": 0,
-            "cha": 0,
-            "intel": 0,
-            "wis": 0
+            "hp": 0, "str": 1, "dex": 0, "con": 0, "cha": 0, "intel": 0, "wis": 0
         },
+        "range": 1,
         "description": "Crude but effective. Goblin make."
     }
 }
