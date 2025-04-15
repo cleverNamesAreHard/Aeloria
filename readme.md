@@ -58,3 +58,5 @@ This is meant to be a playable version of a homebrew campaign setting, so others
 Got some backend stats, some basic gameplay, init, combat UI.  Next is to get "scenes" or "stages" created so I can start the story somewhere, move it along, and create some kind of save state.  Then I can make a main menu, and it's dialogue dialogue dialogue while I work on finding a tileset and way to represent it on a semi-topdown way.  Not sure how I'm gonna do that yet.
 
 This is a work in progress in the most literal sense of the phrase.
+
+Unnecessary change to test something.
