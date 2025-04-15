@@ -1,0 +1,9 @@
+{
+    "id": "elarion",
+    "name": "Elarion",
+    "description": "A war-torn realm caught between elemental forces and ancient prophecy.",
+    "is_default": true,
+    "starting_map": "prologue",
+    "version": "1.0"
+}
+  
