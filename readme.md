@@ -72,6 +72,10 @@ If you'd like to contribute to the project, consider taking a look at [`todo.md`
 
 This is an active, evolving project.  The current version is focused on core combat systems and early engine foundations.  The narrative layer and tooling for campaign building are in development.
 
+## Game Screenshots
+
+![Screenshot 1 - Base State](https://i.imgur.com/IbF1ocu.png)
+
 ### License
 
 This project is licensed under the MIT License  
