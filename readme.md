@@ -64,6 +64,12 @@ This is a personal project to adapt a custom Dungeons & Dragons campaign into a 
    python game.py
    ```
 
+## Contributing
+
+Pull Requests are welcome!
+
+If you'd like to contribute to the project, consider taking a look at [`todo.md`](https://github.com/cleverNamesAreHard/Elarion/blob/master/todo.md).  This contains both high-priority MVP features and future expansion goals.
+
 ## Notes
 
 This is an active, evolving project. The current version is focused on core combat systems and early engine foundations. The narrative layer and tooling for campaign building are in development.
