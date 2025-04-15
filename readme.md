@@ -32,10 +32,15 @@ This is a personal project to adapt a custom Dungeons & Dragons campaign into a 
 
 ## Setup
 
-1. Make sure you're using **Python 3.13.2**  
-   [Download it here](https://www.python.org/downloads/release/python-3132/)
+1. Clone this repository
+    ```bash
+    git clone https://github.com/cleverNamesAreHard/Elarion.git
+    cd Elarion
+    ```
 
-2. Create and activate a virtual environment:
+2. Make sure you're using [**Python 3.13.2**](https://www.python.org/downloads/release/python-3132/)
+
+3. Create and activate a virtual environment:
    ```bash
    python -m venv venv
    ```
@@ -49,12 +54,12 @@ This is a personal project to adapt a custom Dungeons & Dragons campaign into a 
      source venv/bin/activate
      ```
 
-3. Install dependencies:
+4. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Run the game:
+5. Run the game:
    ```bash
    python game.py
    ```
