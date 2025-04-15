@@ -62,5 +62,69 @@
         "target": "enemy",
         "range": 1,
         "damage": "0"
+    },
+    "9": {
+        "name": "Piercing Shot",
+        "description": "Fires a precise arrow that pierces enemy armor.",
+        "category": "attack",
+        "target": "enemy",
+        "range": 4,
+        "damage": "1d8+2"
+    },
+    "10": {
+        "name": "Marked Prey",
+        "description": "Marks a single enemy, increasing damage taken from allies.",
+        "category": "magic",
+        "target": "enemy",
+        "range": 3,
+        "damage": "0"
+    },
+    "11": {
+        "name": "Radiant Heal",
+        "description": "Heals a nearby ally with divine light.",
+        "category": "magic",
+        "target": "ally",
+        "range": 2,
+        "damage": "-1d8+3"
+    },
+    "12": {
+        "name": "Holy Surge",
+        "description": "Smashes an enemy with a radiant blow that restores HP to the caster.",
+        "category": "attack",
+        "target": "enemy",
+        "range": 1,
+        "damage": "1d6+2"
+    },
+    "13": {
+        "name": "Smoke Strike",
+        "description": "Vanish and strike from behind. High crit chance if flanking.",
+        "category": "attack",
+        "target": "enemy",
+        "range": 1,
+        "damage": "2d6+2"
+    },
+    "14": {
+        "name": "Shadowstep",
+        "description": "Teleports behind the target within range, ignoring terrain.",
+        "category": "magic",
+        "target": "self",
+        "range": 3,
+        "damage": "0"
+    },
+    "15": {
+        "name": "Skullcrusher",
+        "description": "A brutal overhead swing meant to stagger or crush the enemy.",
+        "category": "attack",
+        "target": "enemy",
+        "range": 1,
+        "damage": "2d6+3"
+    },
+    "16": {
+        "name": "Raging Blow",
+        "description": "A wild strike that increases damage but lowers the user's AC.",
+        "category": "attack",
+        "target": "enemy",
+        "range": 1,
+        "damage": "1d10+4"
     }
 }

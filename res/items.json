@@ -10,7 +10,13 @@
         "spell_attack_bonus": "",
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 0, "wis": 0
+            "hp": 0,
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "cha": 0,
+            "intel": 0,
+            "wis": 0
         },
         "range": 1,
         "description": "Insert Description here"
@@ -26,7 +32,13 @@
         "spell_attack_bonus": "",
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 0, "wis": 0
+            "hp": 0,
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "cha": 0,
+            "intel": 0,
+            "wis": 0
         },
         "description": "Insert Description here"
     },
@@ -41,7 +53,13 @@
         "spell_attack_bonus": "",
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 0, "wis": 1
+            "hp": 0,
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "cha": 0,
+            "intel": 0,
+            "wis": 1
         },
         "description": "Insert Description here"
     },
@@ -56,7 +74,13 @@
         "spell_attack_bonus": 1,
         "spell_save": 1,
         "stat_bonuses": {
-            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 1, "wis": 0
+            "hp": 0,
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "cha": 0,
+            "intel": 1,
+            "wis": 0
         },
         "range": 3,
         "description": "A wand imbued with a flicker of fire magic, enhancing magical potency."
@@ -72,7 +96,13 @@
         "spell_attack_bonus": 0,
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 1, "wis": 1
+            "hp": 0,
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "cha": 0,
+            "intel": 1,
+            "wis": 1
         },
         "description": "Robes worn by novice casters. Offers minor protection and enhances focus."
     },
@@ -87,7 +117,13 @@
         "spell_attack_bonus": 0,
         "spell_save": 1,
         "stat_bonuses": {
-            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 1, "intel": 0, "wis": 0
+            "hp": 0,
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "cha": 1,
+            "intel": 0,
+            "wis": 0
         },
         "description": "An amulet etched with arcane runes. Said to sharpen memory and wit in battle."
     },
@@ -102,7 +138,13 @@
         "spell_attack_bonus": 2,
         "spell_save": 1,
         "stat_bonuses": {
-            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 1, "intel": 1, "wis": 0
+            "hp": 0,
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "cha": 1,
+            "intel": 1,
+            "wis": 0
         },
         "range": 4,
         "description": "An unsettling wand infused with the Void. Resonates with despair."
@@ -118,7 +160,13 @@
         "spell_attack_bonus": 0,
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0, "str": 0, "dex": 0, "con": 1, "cha": 1, "intel": 0, "wis": 1
+            "hp": 0,
+            "str": 0,
+            "dex": 0,
+            "con": 1,
+            "cha": 1,
+            "intel": 0,
+            "wis": 1
         },
         "description": "Dark robes of a lost disciple. They shimmer with unseen patterns."
     },
@@ -133,7 +181,13 @@
         "spell_attack_bonus": 0,
         "spell_save": 1,
         "stat_bonuses": {
-            "hp": 0, "str": 0, "dex": 0, "con": 0, "cha": 0, "intel": 1, "wis": 1
+            "hp": 0,
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "cha": 0,
+            "intel": 1,
+            "wis": 1
         },
         "description": "This eerie pendant whispers secrets from another world."
     },
@@ -148,9 +202,229 @@
         "spell_attack_bonus": 0,
         "spell_save": 0,
         "stat_bonuses": {
-            "hp": 0, "str": 1, "dex": 0, "con": 0, "cha": 0, "intel": 0, "wis": 0
+            "hp": 0,
+            "str": 1,
+            "dex": 0,
+            "con": 0,
+            "cha": 0,
+            "intel": 0,
+            "wis": 0
         },
         "range": 1,
         "description": "Crude but effective. Goblin make."
+    },
+    "11": {
+        "item_id": 11,
+        "slot": "weapon",
+        "name": "Twinfang Shortbow",
+        "atk_roll": "1d8+1",
+        "attack_bonus": 1,
+        "ac_bonus": 0,
+        "init_bonus": 1,
+        "spell_attack_bonus": 0,
+        "spell_save": 0,
+        "stat_bonuses": {
+            "hp": 0,
+            "str": 0,
+            "dex": 1,
+            "con": 0,
+            "cha": 0,
+            "intel": 0,
+            "wis": 0
+        },
+        "range": 3,
+        "description": "A sleek bow crafted from silverwood, known for its accuracy and speed."
+    },
+    "12": {
+        "item_id": 12,
+        "slot": "chest",
+        "name": "Leathers of the Thorn Trail",
+        "atk_roll": "",
+        "attack_bonus": 0,
+        "ac_bonus": 2,
+        "init_bonus": 1,
+        "spell_attack_bonus": 0,
+        "spell_save": 0,
+        "stat_bonuses": {
+            "hp": 0,
+            "str": 0,
+            "dex": 1,
+            "con": 0,
+            "cha": 0,
+            "intel": 0,
+            "wis": 1
+        },
+        "description": "Worn by Thornstride scouts. Lightweight and resistant to weather and wear."
+    },
+    "13": {
+        "item_id": 13,
+        "slot": "amulet",
+        "name": "Hunter's Focus Pendant",
+        "atk_roll": "",
+        "attack_bonus": 0,
+        "ac_bonus": 0,
+        "init_bonus": 1,
+        "spell_attack_bonus": 0,
+        "spell_save": 0,
+        "stat_bonuses": {
+            "hp": 0,
+            "str": 0,
+            "dex": 1,
+            "con": 0,
+            "cha": 0,
+            "intel": 0,
+            "wis": 0
+        },
+        "description": "A charm said to sharpen the mind during hunts and bring luck to ranged shots."
+    },
+    "14": {
+        "item_id": 14,
+        "slot": "weapon",
+        "name": "Mace of Soothing Light",
+        "atk_roll": "1d6+2",
+        "attack_bonus": 0,
+        "ac_bonus": 0,
+        "init_bonus": 0,
+        "spell_attack_bonus": 1,
+        "spell_save": 1,
+        "stat_bonuses": {
+            "hp": 0,
+            "str": 1,
+            "dex": 0,
+            "con": 0,
+            "cha": 0,
+            "intel": 0,
+            "wis": 1
+        },
+        "range": 1,
+        "description": "This mace hums with healing magic. Forged for defenders of sacred places."
+    },
+    "15": {
+        "item_id": 15,
+        "slot": "chest",
+        "name": "Vestments of the Dawn",
+        "atk_roll": "",
+        "attack_bonus": 0,
+        "ac_bonus": 2,
+        "init_bonus": 0,
+        "spell_attack_bonus": 0,
+        "spell_save": 1,
+        "stat_bonuses": {
+            "hp": 1,
+            "str": 0,
+            "dex": 0,
+            "con": 1,
+            "cha": 0,
+            "intel": 0,
+            "wis": 1
+        },
+        "description": "Holy robes passed down through generations of clerics. They glow at sunrise."
+    },
+    "16": {
+        "item_id": 16,
+        "slot": "amulet",
+        "name": "Sigil of Compassion",
+        "atk_roll": "",
+        "attack_bonus": 0,
+        "ac_bonus": 0,
+        "init_bonus": 0,
+        "spell_attack_bonus": 1,
+        "spell_save": 1,
+        "stat_bonuses": {
+            "hp": 0,
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "cha": 1,
+            "intel": 0,
+            "wis": 1
+        },
+        "description": "A sacred relic imbued with divine energy. A beacon of mercy and strength."
+    },
+    "17": {
+        "item_id": 17,
+        "slot": "weapon",
+        "name": "Dagger of Smoke",
+        "atk_roll": "1d6+2",
+        "attack_bonus": 2,
+        "ac_bonus": 0,
+        "init_bonus": 1,
+        "spell_attack_bonus": 1,
+        "spell_save": 0,
+        "stat_bonuses": {
+            "hp": 0,
+            "str": 0,
+            "dex": 1,
+            "con": 0,
+            "cha": 0,
+            "intel": 1,
+            "wis": 0
+        },
+        "range": 1,
+        "description": "A curved dagger forged in shadow. Harder to see than to block."
+    },
+    "18": {
+        "item_id": 18,
+        "slot": "chest",
+        "name": "Cloak of the Vanished",
+        "atk_roll": "",
+        "attack_bonus": 0,
+        "ac_bonus": 2,
+        "init_bonus": 1,
+        "spell_attack_bonus": 0,
+        "spell_save": 0,
+        "stat_bonuses": {
+            "hp": 0,
+            "str": 0,
+            "dex": 1,
+            "con": 0,
+            "cha": 1,
+            "intel": 0,
+            "wis": 0
+        },
+        "description": "A shifting cloak woven by assassins. Lets the wearer blend with darkness."
+    },
+    "19": {
+        "item_id": 19,
+        "slot": "amulet",
+        "name": "Shard of Forgotten Echoes",
+        "atk_roll": "",
+        "attack_bonus": 0,
+        "ac_bonus": 0,
+        "init_bonus": 1,
+        "spell_attack_bonus": 1,
+        "spell_save": 1,
+        "stat_bonuses": {
+            "hp": 0,
+            "str": 0,
+            "dex": 0,
+            "con": 0,
+            "cha": 1,
+            "intel": 1,
+            "wis": 0
+        },
+        "description": "A ghostly fragment of a lost blade. Whispers strike alongside the real one."
+    },
+    "20": {
+        "item_id": 20,
+        "slot": "weapon",
+        "name": "Crushing Warclub",
+        "atk_roll": "2d4+2",
+        "attack_bonus": 0,
+        "ac_bonus": 0,
+        "init_bonus": -1,
+        "spell_attack_bonus": 0,
+        "spell_save": 0,
+        "stat_bonuses": {
+            "hp": 0,
+            "str": 1,
+            "dex": 0,
+            "con": 1,
+            "cha": 0,
+            "intel": 0,
+            "wis": 0
+        },
+        "range": 1,
+        "description": "A massive iron club wielded with terrifying force by orc warriors."
     }
 }
