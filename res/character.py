@@ -31,6 +31,7 @@ class Character:
         self.job = job
         self.lvl = lvl
         self.hp = hp
+        self.current_hp = hp
         self.strength = strength
         self.dex = dex
         self.con = con

@@ -19,6 +19,36 @@ This is a personal project to convert a custom Dungeons & Dragons campaign into 
 - Character stats, leveling, and abilities (based on D&D mechanics)
 - Encounters adapted directly from sessions in the original campaign
 
+## Setup
+
+To get the game running locally:
+
+1. Make sure you're using **Python 3.13.2**
+   - You can download it from [python.org](https://www.python.org/downloads/release/python-3132/)
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   ```
+3. Activate the virtual environment:
+   - On Windows:
+     ```bash
+     .\venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
+4. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+Once everything’s installed, run the game with:
+
+```bash
+python game.py
+```
+
 ## Why This Exists
 
 This is meant to be a playable version of a homebrew campaign setting, so others can experience it without needing to be at the table. It also makes it easier to revisit the story or try out different decisions without relying on memory or group availability.
