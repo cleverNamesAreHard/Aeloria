@@ -3,6 +3,9 @@
 
 This is a personal project to adapt a custom Dungeons & Dragons campaign into a turn-based tactical RPG.  The goal is to make the story and world accessible outside the tabletop setting, giving players a way to experience the campaign solo.
 
+#### Note
+As of now, it's just colors on the grid.  There are no assets yet.  GIFs of gameplay coming soon.
+
 ![Elarion Chronicles Banner](https://i.imgur.com/htZ7ohK.png)
 
 ## Project Goals
@@ -23,12 +26,7 @@ This is a personal project to adapt a custom Dungeons & Dragons campaign into a 
 
 ## In Progress / Planned Features
 
-- Scene scripting and dialogue system for narrative delivery  
-- A save/load system for campaign progress  
-- Main menu and game state management  
-- Visual map tileset and semi-topdown representation  
-- Drag-and-drop tools for building scenes and maps (editor UI)  
-- Full campaign conversion from original D&D sessions  
+See [`todo.md`](https://github.com/cleverNamesAreHard/Elarion/blob/master/todo.md)
 
 ## Setup
 
