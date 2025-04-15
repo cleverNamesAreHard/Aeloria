@@ -3,7 +3,7 @@
 
 This is a personal project to adapt a custom Dungeons & Dragons campaign into a turn-based tactical RPG. The goal is to make the story and world accessible outside the tabletop setting, giving players a way to experience the campaign solo.
 
-![Elarion Chronicles Banner](https://i.imgur.com/cPiu7S1.png)
+![Elarion Chronicles Banner](https://i.imgur.com/htZ7ohK.png)
 
 ## Project Goals
 
